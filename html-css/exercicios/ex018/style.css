@@ -1,0 +1,27 @@
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+    main {
+        text-align: center;
+        background-color: #ffffff;
+        border-radius:  10px;
+        width: 600px;
+        padding: 10px;
+        margin: auto;
+        box-shadow: 5px 5px 15px rgba(2, 42, 57, 0.488);
+        background-size: auto;
+    }
+    h1 {
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-size: 60px;
+        background-image: linear-gradient(45deg, #034159, #02735E,#038C3E);
+        background-clip: text;
+        color: transparent;
+    }
+    p {
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
+    }
+        body {
+            background-image: linear-gradient(90deg, #02735E,#034159);
+        }
