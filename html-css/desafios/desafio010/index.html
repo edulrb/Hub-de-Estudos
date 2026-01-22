@@ -5,112 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidades de Tecnologia</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
-@font-face {
-    font-family: 'Idroid';
-    src: url('fonts/idroid.otf') format('opentype');
-}
-
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0px;
-    padding: 0px;
-}
-iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-}
-    body {
-        background-color: #84e1ad;
-    }
-    main {
-        margin: auto;
-        width: 80%;
-        background-color: #ffffff;
-        padding: 50px;
-        border-bottom-left-radius: 22px;
-        border-bottom-right-radius: 22px;
-        margin-bottom: 50px;
-    }
-    header {
-        background-image: linear-gradient(to bottom, #64e39d, #164c2e);
-        padding-top: 30px;
-        padding-bottom: 20px;
-        padding-left: 50px;
-    }
-    header > h1 {
-        color:white;
-        font-family: "Oswald", sans-serif;
-        font-weight: 400;
-       text-shadow: 0px 5px 10px black;
-        text-align: center;
-    }
-    header > p {
-        text-align: center;
-        color: white;
-        font-weight: 100;
-        text-shadow: 0px 5px 10px black;
-        margin-bottom: 50px;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-        padding: 10px;
-    }
-    a:hover {
-        color:#164c2e;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 0px 3px 10px rgba(21, 65, 47, 0.329);
-    }
-    a:active {
-        color:#bdf9d8;
-        background-color: rgba(73, 73, 73, 0.274);
-    }
-
-    h1 {
-        font-family: 'Idroid';
-        color: #1B5C38;
-    }
-    h2 {
-        font-family: 'Idroid';
-        color: #1B5C38;
-        background-image: linear-gradient(to right, #84e1ad, transparent);
-    }
-    #final {
-        background-color: #C5EBD6;
-        border-radius: 10px;
-        padding: 10px;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.351);
-    }
-    h3 {
-        background-image: linear-gradient(to right, #177943, #2FA866);
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    ul {
-        display: inline-block;
-        list-style-position: inside;
-        margin-left: 50px;
-    }
-    #lista2 {
-
-    }
-    footer {
-        background-color: #1A5C38;
-        color: white;
-        text-align: center;
-    }
-</style>
 <body>
     <header>
         <h1>CURIOSIDADES DE TECNOLOGIA</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
-        <div>
+        <div id="inicial">
             <a href="#">Home</a>
             <a href="#">Notícias</a>
             <a href="#">Curiosidades</a>
@@ -160,11 +61,11 @@ iframe {
             <li>9.0 - Pie</li>
         </ul>
         <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
-        <p>Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
+        <p>Acesse aqui o site <a href="#" id="last">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
         </div>
     </main>
     <footer>
-        <p>Site criado por Eduardo Lustosa para o CursoemVideo</p>
+        <p>Site criado por <strong>Eduardo Lustosa</strong> para o <strong>CursoemVideo</strong></p>
     </footer>
 </body>
 </html>
