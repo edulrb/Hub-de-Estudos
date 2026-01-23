@@ -50,6 +50,7 @@ iframe {
         text-decoration: none;
         color: white;
         padding: 10px;
+        transition-duration: 400ms;
     }
     div#inicial > a:hover {
         color:#164c2e;
@@ -104,5 +105,11 @@ iframe {
         font-weight: 900;
     }
     a#last:hover {
-        color: rgb(155, 167, 155);
+        color: rgb(240, 240, 240);
+        text-shadow: rgba(255, 255, 255, 0.379) 1px 1px 10px;
+    }
+    a {
+        color: rgb(164, 233, 166);
+        text-decoration: none;
+        text-shadow: #84e1ad 1px 1px 5px;
     }
