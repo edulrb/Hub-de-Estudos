@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            position: relative;
+            border-collapse: collapse;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .real::before {
+            content: "BRL";
+            color: white;
+            font-weight: 100;
+            padding: 3px;
+            background-image: linear-gradient(to bottom, yellow, goldenrod);
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .dollar::before {
+            content: "U$D";
+            color: white;
+            font-weight: 100;
+            padding: 3px;
+            background-image: linear-gradient(to bottom, lightgreen, darkgreen);
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .euro::before {
+            content: "€UR";
+            color: white;
+            font-weight: 100;
+            padding: 3px;
+            background-image: linear-gradient(to bottom, blue, purple);
+            border-radius: 10px;
+            margin: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando Tabelas</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Jogadores ativos</th>
+            <th>Gasto mensal</th>
+            <th>Media de tempo ativo diariamente</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alpha Wolf</td>
+            <td class="real">127,09</td>
+            <td>3:03:23</td>
+        </tr>
+        <tr>
+            <td>Beta Ray</td>
+            <td class="euro">4.049,69</td>
+            <td>4:01:52</td>
+        </tr>
+        <tr>
+            <td>Gamma Ray</td>
+            <td class="dollar">2.576,75</td>
+            <td>4:36:38</td>
+        </tr>
+        <tr>
+            <td>Delta Force</td>
+            <td class="dollar">2.416,26</td>
+            <td>1:26:45</td>
+        </tr>
+        <tr>
+            <td>Epsilon One</td>
+            <td class="euro">3.640,70</td>
+            <td>0:48:09</td>
+        </tr>
+        <tr>
+            <td>Shadow Ninja</td>
+            <td class="dollar">3.058,50</td>
+            <td>5:07:09</td>
+        </tr>
+        <tr>
+            <td>Silver Surfer</td>
+            <td class="real">4.928,47</td>
+            <td>5:48:54</td>
+        </tr>
+        <tr>
+            <td>Golden Eagle</td>
+            <td class="real">1.604,24</td>
+            <td>0:55:04</td>
+        </tr>
+        <tr>
+            <td>Iron Maiden</td>
+            <td class="real">74,95</td>
+            <td>3:31:58</td>
+        </tr>
+        <tr>
+            <td>Steel Heart</td>
+            <td class="euro">1.002,39</td>
+            <td>1:34:21</td>
+        </tr>
+        <tr>
+            <td>Neon Light</td>
+            <td class="real">4.243,89</td>
+            <td>6:00:13</td>
+        </tr>
+        <tr>
+            <td>Dark Knight</td>
+            <td class="dollar">2.402,24</td>
+            <td>6:14:37</td>
+        </tr>
+        <tr>
+            <td>Silent Assassin</td>
+            <td class="euro">4.034,48</td>
+            <td>7:26:08</td>
+        </tr>
+        <tr>
+            <td>Swift Blade</td>
+            <td class="euro">3.660,95</td>
+            <td>7:38:52</td>
+        </tr>
+        <tr>
+            <td>Storm Rider</td>
+            <td class="dollar">527,47</td>
+            <td>4:10:31</td>
+        </tr>
+        <tr>
+            <td>Cloud Strife</td>
+            <td class="dollar">3.786,22</td>
+            <td>7:37:36</td>
+        </tr>
+        <tr>
+            <td>Lunar Eclipse</td>
+            <td class="real">1.743,69</td>
+            <td>7:11:58</td>
+        </tr>
+        <tr>
+            <td>Solar Flare</td>
+            <td class="dollar">1.428,70</td>
+            <td>1:54:28</td>
+        </tr>
+        <tr>
+            <td>Star Gazer</td>
+            <td class="euro">2.519,85</td>
+            <td>4:55:14</td>
+        </tr>
+        <tr>
+            <td>Void Walker</td>
+            <td class="dollar">4.779,35</td>
+            <td>6:47:28</td>
+        </tr>
+        <tr>
+            <td>Mystic Mage</td>
+            <td class="dollar">114,96</td>
+            <td>2:39:41</td>
+        </tr>
+        <tr>
+            <td>Primal Beast</td>
+            <td class="euro">2.978,59</td>
+            <td>5:32:19</td>
+        </tr>
+        <tr>
+            <td>Ancient Guard</td>
+            <td class="euro">4.607,15</td>
+            <td>7:59:59</td>
+        </tr>
+        <tr>
+            <td>Rogue Agent</td>
+            <td class="euro">1.273,57</td>
+            <td>1:41:47</td>
+        </tr>
+        <tr>
+            <td>Elite Sniper</td>
+            <td class="euro">3.535,86</td>
+            <td>7:20:59</td>
+        </tr>
+        <tr>
+            <td>Wild Card</td>
+            <td class="dollar">4.724,54</td>
+            <td>6:04:56</td>
+        </tr>
+        <tr>
+            <td>Ace High</td>
+            <td class="real">3.125,98</td>
+            <td>6:02:59</td>
+        </tr>
+        <tr>
+            <td>King Pin</td>
+            <td class="dollar">391,74</td>
+            <td>6:54:14</td>
+        </tr>
+        <tr>
+            <td>Queen Bee</td>
+            <td class="dollar">770,26</td>
+            <td>6:43:01</td>
+        </tr>
+        <tr>
+            <td>Jack Frost</td>
+            <td class="euro">308,90</td>
+            <td>2:32:13</td>
+        </tr>
+        <tr>
+            <td>Frost Bite</td>
+            <td class="dollar">3.299,65</td>
+            <td>4:31:15</td>
+        </tr>
+        <tr>
+            <td>Fire Starter</td>
+            <td class="dollar">852,11</td>
+            <td>5:42:37</td>
+        </tr>
+        <tr>
+            <td>Water Spout</td>
+            <td class="dollar">4.155,73</td>
+            <td>3:18:27</td>
+        </tr>
+        <tr>
+            <td>Earth Quake</td>
+            <td class="euro">3.927,66</td>
+            <td>4:14:45</td>
+        </tr>
+        <tr>
+            <td>Wind Walker</td>
+            <td class="dollar">1.606,18</td>
+            <td>3:46:27</td>
+        </tr>
+        <tr>
+            <td>Sonic Boom</td>
+            <td class="real">355,72</td>
+            <td>3:08:11</td>
+        </tr>
+        <tr>
+            <td>Thunder Bolt</td>
+            <td class="euro">3.071,66</td>
+            <td>1:00:57</td>
+        </tr>
+        <tr>
+            <td>Light Speed</td>
+            <td class="euro">3.732,15</td>
+            <td>2:05:31</td>
+        </tr>
+        <tr>
+            <td>Heavy Hitter</td>
+            <td class="dollar">3.877,54</td>
+            <td>5:14:09</td>
+        </tr>
+        <tr>
+            <td>Big Boss</td>
+            <td class="euro">1.746,94</td>
+            <td>6:08:53</td>
+        </tr>
+        <tr>
+            <td>Small Fry</td>
+            <td class="euro">2.919,38</td>
+            <td>7:13:13</td>
+        </tr>
+        <tr>
+            <td>Lazy Dog</td>
+            <td class="dollar">2.291,57</td>
+            <td>2:59:31</td>
+        </tr>
+        <tr>
+            <td>Quick Fox</td>
+            <td class="euro">2.641,97</td>
+            <td>3:23:48</td>
+        </tr>
+        <tr>
+            <td>Happy Hippo</td>
+            <td class="dollar">892,42</td>
+            <td>5:39:54</td>
+        </tr>
+        <tr>
+            <td>Grumpy Bear</td>
+            <td class="euro">1.743,92</td>
+            <td>3:25:37</td>
+        </tr>
+        <tr>
+            <td>Crazy Cat</td>
+            <td class="real">643,11</td>
+            <td>0:21:15</td>
+        </tr>
+        <tr>
+            <td>Cool Cucumber</td>
+            <td class="real">1.900,19</td>
+            <td>3:51:32</td>
+        </tr>
+        <tr>
+            <td>Smart Cookie</td>
+            <td class="euro">2.823,86</td>
+            <td>1:09:31</td>
+        </tr>
+        <tr>
+            <td>Brave Heart</td>
+            <td class="euro">1.689,84</td>
+            <td>0:49:32</td>
+        </tr>
+        <tr>
+            <td>Lucky Strike</td>
+            <td class="euro">1.965,90</td>
+            <td>7:08:07</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Dados Globais</th>
+            <td class="real">556.823,03</td>
+            <td>4:23:31</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
