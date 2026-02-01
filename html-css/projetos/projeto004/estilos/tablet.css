@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+html {
+    background-image: linear-gradient(360deg, #405F57, #97ABA9);
+}
+
+main {
+    width: 70vw;
+    height: 300px;
+    margin-top: 200px;
+
+}
+
+section {
+}
+
+article#janelaLogin {
+    margin-top:-300px;
+    margin-left: 180px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 280px;
+    width: 48.9vw;
+    padding: 10px;
+}
+
+article#background {
+    height: 300px;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+input.campos {
+    width: 40vw;
+}
+
+div {
+    margin-left: 5px;
+    width: 48vw;
+}
+
+input.botao {
+    margin-left: 5px;
+    width: 48vw;
+}
+
