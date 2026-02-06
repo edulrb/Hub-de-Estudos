@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Lustosa</title>
+    <style>
+        :root {
+            --color-muted: #f3f4f6;
+        }
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: white;
+        }
+        header, main {
+            width: 650px;
+            background-color: rgb(255, 255, 255);
+            margin: auto;
+        }
+        header {
+            margin-top: 30px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        main {
+            border-radius: 0px 0px 20px 20px;
+        }
+        h1 {
+            font-weight: 500;
+            padding-left: 10px;
+            font-size: 1.4em;
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 1.8em;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        header > p {
+            padding-top: 10px;
+            font-weight: 100;
+            font-size: 1em;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            font-family: monospace;
+            color: gray;
+        }
+        ul {
+            margin-left: 25px;
+            color: gray;
+            padding-top: 5px;
+            width: 550px;
+
+        }
+        ul.conteudo {
+            list-style-type: circle;
+            margin-left: 45px;
+        }
+        li {
+            color: gray;
+            font-size: 0.8em;
+            margin-top: 3px;
+        }
+        ul.conteudo > li {
+            padding-bottom: 10px;
+        }
+        ul.head, ul.head > li {
+            color: black;
+            font-weight: 600;
+        }
+         ul > p[itemprop="description"], p.plaquetas, span.periodo {
+            display: inline-block;
+            background-color: var(--color-muted);
+            padding: 2px 8px;
+            font-weight: 500;
+            font-size: 12px;
+            border-radius: 2px;
+            color: rgb(85, 85, 85);
+            text-align: center;
+        }
+        #skills {
+            margin-left: 20px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            background-color: rgba(221, 221, 221, 0.522);
+            padding: 2px;
+            border-radius: 8px;
+            transition-duration: 500ms;
+        }
+        a:hover {
+            background-color: gray;
+            color: white;
+            box-shadow: inset white 0px 0px 5px;
+        }
+        span.data {
+            color: rgb(115, 115, 115);
+            text-align: center;
+            font-weight: 400;
+            padding: 0px 0px 0px 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eduardo Lustosa</h1>
+        <p itemprop="description">Petrolina - PE | (87) 9 9200-7424 | eduardolusribeiro@gmail.com</p>
+    </header>
+    <main>
+        <h2>Experiência</h2>
+        <ul class="head">
+            <li>Secretaria Municipal de Saúde <span class="data">| Set/2025 - Presente</span></li>
+            <p itemprop="description">Estágio | Suporte Técnico | Automações</p>
+        </ul>
+        <ul class="conteudo">
+            <li>Atendimento direto aos <abbr title="Agentes Comunitários de Saúde">ACS</abbr> para diagnóstico e resolução de problemas no sistema, focando na correção de inconsistências de logradouros e falhas de cadastro.</li>
+            <li>Atuação no saneamento de dados e na solução de erros de sincronização reportados pelos <abbr title="Agentes Comunitários de Saúde">ACS</abbr>, esses erros impedem o envio das fichas de atendimento dos dispositivos móveis para a base municipal.</li>
+            <li>Projetei automações em Python e scripts em JavaScript que desenvolvi com assistência de IA, essas automações elevaram a produção do setor de 300 para 1.000 cadastros diários por estágiario em tarefas específicas de processamento de dados.</li>
+        </ul>
+        <ul class="head">
+            <li>Projeto PHorizon<span class="data">| Set/2023 - Out/2025</span></li>
+            <p itemprop="description"> Projeto Pessoal | Desenvolvedor e Adminstrador</p>
+        </ul>
+        <ul class="conteudo">
+            <li>Desenvolvimento e gestão de um servidor de jogos baseado no <a href="https://github.com/peonso/forgottenserver036pl1" target="_blank" rel="external">TFS 0.3.6</a>, mantendo o projeto online por 2 anos. Trabalhei na manutenção do core em C++, lógica de scripts em Lua e administração do banco de dados MySQL via phpMyAdmin. Fui responsável por todo o processo, desde o hosteamento e suporte aos jogadores até a correção de bugs e criação de novas features para manter o público ativo, utilizando um sistema de doações para custear o projeto.</li>
+        </ul>
+        <h2>Habilidades</h2>
+        <div id="skills">
+            <p class="plaquetas">C++</p>
+            <p class="plaquetas">Lua</p>
+            <p class="plaquetas">HTML5/CSS3</p>
+            <p class="plaquetas">Git/GitHub</p>
+            <p class="plaquetas">Ubuntu</p>
+            <p class="plaquetas">phpMyAdmin</p>
+            <p class="plaquetas">MySQL</p>
+            <p class="plaquetas">Data Cleaning</p>
+        </div>
+        <h2>Formação</h2>
+            <ul class="head">
+                <li>Ciência da Computação <span class="periodo">Cursando o 2° periodo</span></li>
+            </ul>
+            <ul class="conteudo">
+                <li>Bacharelado - Faculdade de Petrolina <span class="data">| Ago/2025 - <em>Previsão de conclusão[Ago/2029]</em></span></li>
+            </ul>
+            <ul class="head">
+                <li>Jogos Digitais <span class="periodo">Incompleto, 2 periodos concluídos</span></li>
+            </ul>
+            <ul class="conteudo">
+                <li>Tecnólogo - Uniasselvi <span class="data">| Jan/2024 - Jul/2025</span></li>
+            </ul>
+        </main>
+</body>
+</html>
