@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background: rgb(139, 150, 185);
+        }
+        header > h1, footer > p {
+            color: white;
+            text-align: center;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            height: 320px;
+            width: 500px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.375);
+        }
+        main > p {
+            text-align: center;
+        }
+        div.res {
+            background-image: url(images/desconhecido.png);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin: auto;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.375);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <main>
+        <form action="" method="post">
+            <label for="anoNasc">Ano de Nascimento:</label>
+            <input type="number" name="anoNasc" id="anoNasc" min="1800" max="2026"> <br>
+            <span>Sexo:</span>
+            <input type="radio" name="sex" id="masc" value="Homem">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sex" id="fem" value="Mulher">
+            <label for="fem">Feminino</label>
+            <br>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </form>
+        <p class="res">
+        </p>
+        <div class="res"></div>
+    </main>
+    <footer>
+        <p>CursoemVideo</p>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+</html>

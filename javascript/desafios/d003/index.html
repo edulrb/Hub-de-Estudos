@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos contar</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background: #3D82D4;
+        }
+        header > h1, footer > p {
+            color: white;
+            text-align: center;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            height: 260px;
+            width: 400px;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.375);
+        }
+        main > p {
+            background-color: lightgray;
+            margin-top: 60px;
+            padding: 5px;
+            border-radius: 15px;
+            border: 2px solid rgb(52, 117, 138);
+            font-weight: 600;
+
+        }
+        input {
+            margin-top: 15px;
+        }
+        input[type="button"] {
+            margin-top: 20px;
+            width: 200px;
+            height: 45px;
+            border-radius: 15px;
+            margin-left: 15px;
+        }
+        input[name="txtini"]
+        {
+            margin-left: 6px;
+        }
+        input[name="txtfim"] 
+        {
+            margin-left: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <!---->
+            <label for="txtini">Início: </label>
+            <input type="number" name="txtini" id="txtini" required>
+            <!----> <br>
+            <label for="txtfim">Fim: </label>
+            <input type="number" name="txtfim" id="txtfim">
+            <!----> <br>
+            <label for="txtpasso">Passo: </label>
+            <input type="number" name="txtpasso" id="txtpasso"> <br>
+            <input type="button" value="Contar" onclick="contar()">
+        </form>
+        <p class="res">
+            Preparando a contagem...
+        </p>
+    </main>
+    <footer>
+        <p>CursoemVideo</p>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+</html>

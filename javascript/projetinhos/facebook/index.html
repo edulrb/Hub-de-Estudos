@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(69, 93, 179);
+            color: white;
+            padding: 25px;
+            font-size: 50px;
+            text-align: center;
+            box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.471);
+        }
+        main {
+            width: 400px;
+            height: 325px;    
+            margin: auto;
+            margin-top: 45px;    
+            border:2px solid rgb(69, 93, 179); 
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(68, 80, 179, 0.385);
+        }
+        div.container {
+            background-color: rgba(218, 218, 218, 0.699);
+            height: 275px;
+            border-top: 2px solid rgb(69,93,179);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        div.title {
+            background: rgb(69,93,179);
+            height: 50px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.284);
+        }
+        div.title > h2 {
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            margin-left: 40%;
+            margin-top: 10px;
+        }
+        input#pass, input#email {
+            margin: 10px;
+            width: 200px;
+            height: 30px;
+            border-radius: 20px;
+            font-size: 1.2em;
+
+        }
+        input[type="button"] {
+            display: inline-block;
+            margin-left: 34%;
+            margin-top: 20px;
+            width: 130px;
+            height: 40px;
+            border-radius: 15px;
+            transition-duration: 500ms;
+            cursor: pointer;
+            font-weight: 900;
+        }
+        input[type="button"]:hover {
+            background-color: rgb(111, 111, 246);
+            color: white;
+        }
+        label[for="email"] {
+            margin-left: 43px;
+        }
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 15px;
+        }
+        form {
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>facebook</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Login</h2>
+        </div>
+
+        <div class="container">
+            <form action="#" method="post">
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email" autocomplete="email" required>
+                <br>
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass" autocomplete="current-password" required> <br>
+                <input type="button" value="Login">
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

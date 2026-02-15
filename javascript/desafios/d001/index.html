@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        body {
+            background: rgb(255, 0, 179);
+        }
+        main {
+            border-radius: 15px;
+            width: 60vw;
+            height: 50vh;
+            background: white;
+            margin: auto;
+            box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.426);
+        }
+        header > h1, footer > p {
+            color: white;
+        }
+        h2 {
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 200;
+        }
+        #horasImg {
+            background-image: url(images/er404.png);
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            box-shadow: inset 0px 0px 15px white;
+        }
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <main>
+        <h2>Agora são x horas</h2>
+        <div id="horasImg"> </div>
+    </main>
+    <footer>
+        <p>CursoemVideo</p>
+    </footer>
+    <script>
+        function carregar() {
+            var agora = new Date()
+            var horas = agora.getHours()
+            var minutos = agora.getMinutes()
+            txtHoras = window.document.querySelector("body > main > h2")
+            txtHoras.innerHTML = `Agora são ${horas}:${minutos}`
+            if(horas < 5) {
+                window.document.body.style = "background: rgb(0, 0, 37)"
+                window.document.getElementById('horasImg').style.backgroundImage = "url(images/madruga.png)"       
+            }
+            else if(horas >= 5 && horas < 12) {
+                window.document.body.style = "background: #d0c08f"
+                    window.document.getElementById('horasImg').style.backgroundImage = "url(images/manha.png)"
+            }
+            else if(horas >= 12 && horas < 18) {
+                window.document.body.style = "background: rgb(234, 195, 0)"
+                window.document.getElementById('horasImg').style.backgroundImage = "url(images/tarde.png)"
+            }
+            else if(horas >= 18 && horas <= 24) {
+                window.document.body.style = "background: rgb(61, 71, 97)"
+                window.document.getElementById('horasImg').style.backgroundImage = "url(images/noite.png)"
+            }
+        }   
+    </script>
+</body>
+</html>

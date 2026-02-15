@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        p#br {
+            background: green;
+            color: yellow;
+        }
+        p#estr {
+            background: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checagem de Nacionalidade</h1>
+    <label for="txtpais">Nome do País:</label>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Checar" onclick="checar()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function checar() {
+            var country = window.document.getElementById('txtpais').value
+            var res = window.document.getElementById('res')
+            if (country == "Brasil" || country == "brasil" || country == "BRASIL" || country == "br" || country == "BR") {
+                res.innerHTML = `<p id="br">Você é do Brasil, você é brasileiro.</p>`
+            }
+            else {
+                res.innerHTML = `<p id="estr">Você é do ${country}, você é estrangeiro ou preencheu com um país inexistente</p>`
+            }
+        }
+    </script>
+</body>
+</html>
