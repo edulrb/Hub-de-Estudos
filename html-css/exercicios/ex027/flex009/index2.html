@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleixible Box</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.container {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: lightsalmon;
+            height: 65px;
+            margin-bottom: 10px;
+
+        }
+        div.container > div {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            flex-basis: 250px;
+            font-weight: bolder;
+            font-size: 2em;
+        }
+        div.container > div.item1 {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        
+         div.container > div.item2 {
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+        
+         div.container> div.item3 {
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+</body>
+</html>
