@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: lightgray;
+}
+
+header {
+    background: gray;
+    color: white;
+    padding: 10px;
+}
+
+div.container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+div.options {
+    display: none;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+div.container > div.options > a {
+    flex: auto;
+    background: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    transition-duration: 450ms;
+    margin: 5px;
+    box-shadow: inset white 0px 0px 4px;
+}
+
+div.container > div.options > a:hover {
+    background: white;
+    color: black;
+    box-shadow: inset gray 0px 0px 10px;
+}
+
+main { 
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.467);
+}
+
+div#toggleButton {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+div#toggleButton:hover {
+    background: black;
+    color: white;
+    box-shadow: inset gray 0px 0px 10px;
+}

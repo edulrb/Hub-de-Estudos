@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+header {
+    text-align: left;
+}
+
+div.container {
+    flex-flow: row wrap;
+}
+
+div.container > div.options > a {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+div.options {
+    flex-flow: row wrap;
+}
+
+div#toggleButton {
+    display: none;
+}
