@@ -37,13 +37,18 @@ section#pokelist {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    flex-shrink: 0;
+    flex-grow: 0;
     background-color: white;
     border-radius: 50px;
     margin: 20px 20px;
     box-shadow: rgba(0, 0, 0, 0.381) 5px 5px 20px;
     padding: 5px;
+    width: 450px;
 }
 div#headerList {
+    display: flex;
+    flex-flow: row wrap;
     margin-top: 25px;
 }
 
@@ -92,4 +97,29 @@ button#searchPoke {
     height: 30px;
     width: 70px;
     margin-top: 10px;
+}
+
+input#logChannel {
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    height: 25px;
+
+}
+
+div.removeBtn {
+    width: 14px;
+    height: 14px;
+    border-radius: 10px;
+    background-color: red;
+    margin-left: 100px;
+    transition-duration: 500ms;
+
+}
+
+div.removeBtn:hover {
+    background-color: rgb(255, 61, 61);
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
 }
