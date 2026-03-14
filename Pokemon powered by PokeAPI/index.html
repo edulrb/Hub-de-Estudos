@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex</title>
+    <link rel="stylesheet" href="style.css"> <!-- Mobile First -->
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/logo.png" alt="logoPokemon">
+        </div>
+        <h1>Pokedex powered by PokéAPI</h1>
+    </header>
+    <main>
+        <section id="pokelist">
+            <div id="headerList">
+                <h1>PokéList</h1> <br>
+                <input type="text" name="search" id="insertPoke">
+                <button id="searchPoke" onclick="insertPokemon()">Adicionar</button>
+            </div>
+            <div class="pokemonContainer">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+
+div > img {
+    width: 250px;
+}
+
+header > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    background-color: rgba(211, 211, 211, 0.855);
+    width: 400px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section#pokelist {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: white;
+    border-radius: 50px;
+    margin: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.381) 5px 5px 20px;
+    padding: 5px;
+}
+div#headerList {
+    margin-top: 25px;
+}
+
+div#headerList > h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightslategray;
+}
+
+div.pokemonContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+article.pokemonCard {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgray;
+    border-radius: 15px;
+    color: gray;
+    font-size: 0.8em;
+}
+
+img.portrait {
+    width: 60px;
+    margin: auto;
+}
+
+input#insertPoke {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+button#searchPoke {
+    border-radius: 15px;
+    height: 30px;
+    width: 70px;
+    margin-top: 10px;
+}
